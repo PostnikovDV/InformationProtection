@@ -19,24 +19,26 @@ namespace information_protection_lab
         }
         string message;
         bool f = true;
-        char[,] matrix = { {'a','b','c','d','e'},
+        char[,] matrix = {
                                        {'f','g','h','i','k'},
+                                       {'a','b','c','d','e'},
                                        {'l','m','n','o','p'},
-                                       { 'q','r','s','t','u'},
-                                       { 'v','w','x','y','z'},
                                        {'A','B','C','D','E'},
+                                       {'q','r','s','t','u'},
+                                       {'v','w','x','y','z'},
                                        {'F','G','H','I','K'},
+                                       {'Q','R','S','T','U'},
                                        {'L','M','N','O','P'},
-                                       { 'Q','R','S','T','U'},
-                                       { 'V','W','X','Y','Z'},
-                                        { '1','2','3','4','5'},
-                                       { '6','7','8','9','0'},
-                                       { '!','.','?',',',';'}
+                                       {'1','2','3','4','5'},
+                                       {'V','W','X','Y','Z'},
+                                       {'6','7','8','9','0'},
+                                       {'!','.','?',',',';'}
                                      };
        
        
         private void button2_Click(object sender, EventArgs e)
         {
+            message = textBox2.Text;
             if (textBox1.Text == "")
             {
                 var errorForm = new ErrorForm();
@@ -66,15 +68,17 @@ namespace information_protection_lab
 
 
                 }
-                textBox1.Text = new_message;
+                textBox2.Text = new_message;
                 button2.Enabled = false;
+       
             }
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (message == null)
+            message = textBox1.Text;
+            if (textBox1.Text == "")
             {
                 var errorForm = new ErrorForm();
                 errorForm.ShowDialog();
@@ -103,20 +107,32 @@ namespace information_protection_lab
 
 
                 }
-                textBox1.Text = new_message;
+                textBox2.Text = new_message;
                 button2.Enabled = true;
+  
             }
             
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
             message = textBox1.Text;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

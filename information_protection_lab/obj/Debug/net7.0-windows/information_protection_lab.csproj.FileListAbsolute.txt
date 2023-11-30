@@ -17,3 +17,6 @@ C:\Учеба 3 курс\Защита информации\information_protectio
 C:\Учеба 3 курс\Защита информации\information_protection_lab\obj\Debug\net7.0-windows\ref\information_protection_lab.dll
 C:\Учеба 3 курс\Защита информации\information_protection_lab\obj\Debug\net7.0-windows\information_protection_lab.ErrorForm.resources
 C:\Учеба 3 курс\Защита информации\information_protection_lab\obj\Debug\net7.0-windows\information_protection_lab.PolybianSquare.resources
+C:\Учеба 3 курс\Защита информации\information_protection_lab\obj\Debug\net7.0-windows\information_protection_lab.RSAForm.resources
+C:\Учеба 3 курс\Защита информации\information_protection_lab\obj\Debug\net7.0-windows\information_protection_lab.Diffie_Hellman.resources
+C:\Учеба 3 курс\Защита информации\information_protection_lab\obj\Debug\net7.0-windows\information_protection_lab.BlockEncryptionForm.resources

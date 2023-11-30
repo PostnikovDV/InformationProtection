@@ -24,6 +24,22 @@ namespace information_protection_lab
 
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var Lab1Window = new RSAForm();
+            Lab1Window.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var Lab1Window = new Diffie_Hellman();
+            Lab1Window.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var Lab1Window = new BlockEncryptionForm();
+            Lab1Window.ShowDialog();
+        }
     }
 }
